@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владислав Харьковский](https://up.htmlacademy.ru/htmlcss/36/user/2275417).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
