@@ -1,0 +1,318 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2");
+  font-display:swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
+.background {
+  background-color: #FFFFFF;
+}
+
+.navigation-list, .navigation-user, .advantages-list, .services-list, .footer-social-list, .breadcrumbs, .sort-view, .hotel-cards, .hotel-pagination {
+  list-style-type: none;
+}
+
+.logo-link, .navigation-link, .navigation-user-link, .footer-social-link, .footer-contacts-phone, .footer-developer-link, .breadcrumbs-link, .sort-view-link, .hotel-pagination-link {
+  text-decoration: none;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+  vertical-align: top;
+  text-transform: capitalize;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #756157;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.main-index {
+  text-align: center;
+}
+
+.sedona-welcome {
+  background-image: url(../images/main/welcome-bottom.svg), url(../images/main/index-background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
+}
+
+.advantages-heading, .services-heading, .subscription-title, .subscription-inner-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-of-type(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-list li:first-of-type, .advantages-list li:last-of-type {
+  background-color: #82B3D3;
+  color: #FFFFFF
+}
+
+.advantages-list .advantages-title:not(:first-of-type):not(:last-of-type) {
+  color: #000000;
+}
+
+.services-heading {
+  color: #000000;
+}
+
+.services-list li:first-of-type, .services-list li:last-of-type {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotel-search-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscription {
+  background-image: url(../images/main/subscribe-background.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: #FFFFFF;
+}
+
+.subscription-title {
+  color: #FFFFFF;
+}
+
+.subscription-email-input {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.subscription-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+.footer-contacts-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.inner-header {
+  background-image: url(../images/catalog/catalog-background.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.hotel-filters-group {
+  border: none;
+}
+
+.hotel-filters-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.hotel-filters-text {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-filters-range-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: #000000;
+}
+
+.hotel-filters-input-ammount {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.hotel-filters-apply-button {
+  background-color: #82B3D3;
+}
+
+.hotel-filters-reset-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+}
+
+.hotel-selection-label, .hotel-selection-output {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotel-selection-sort {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.hotel-card-inner {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-favorite-button {
+  background-color: #82B3D3;
+}
+
+.favorited {
+  background-color: #7DB54F;
+}
+
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.hotel-pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.hotel-pagination-link-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.hotel-pagination-link-space {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000000;
+}
+
+.subscription-inner {
+  text-align: center;
+}
+
+.subscription-inner-email-input {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.subscription-inner-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
