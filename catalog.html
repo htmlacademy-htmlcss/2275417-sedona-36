@@ -37,7 +37,7 @@
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-user-item">
+            <li class="navigation-user-item navigation-user-button">
               <a class="navigation-user-link button" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -46,19 +46,17 @@
       <main class="inner-main main-container">
         <header class="inner-header">
           <div class="inner-header-container">
-            <div class="inner-title-container">
-              <h1 class="inner-header-title">Гостиницы Седоны</h1>
-              <ul class="breadcrumbs">
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
-                    <span class="visually-hidden">Главная</span>
-                  </a>
-                </li>
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link">Гостиницы</a>
-                </li>
-              </ul>
-            </div>
+            <h1 class="inner-header-title">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                </a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Гостиницы</a>
+              </li>
+            </ul>
             <section class="hotel-filters">
               <form class="hotel-filters-form" action="https://echo.htmlacademy.ru" method="post" oninput ="outputHotels.value=filtersAppliedAmmount.value">
               <fieldset class="hotel-filters-group">
@@ -93,14 +91,16 @@
               </fieldset>
               <fieldset class="hotel-filters-group">
                 <legend class="hotel-filters-title">Стоимость, ₽:</legend>
-                <label class="hotel-filters-range-label">
-                  <span class="hotel-filters-range-text">от</span>
-                  <input class="hotel-filters-input-ammount" type="number" name="min-range" min="0" placeholder="0">
-                </label>
-                <label class="hotel-filters-range-label">
-                  <span class="hotel-filters-range-text">до</span>
-                  <input class="hotel-filters-input-ammount" type="number" name="max-range" min="0" placeholder="9000">
-                </label>
+                <div class="hotel-filters-input-container">
+                  <label class="hotel-filters-range-label">
+                    <span class="hotel-filters-range-text">от</span>
+                    <input class="hotel-filters-input-ammount" type="number" name="min-range" min="0" placeholder="0">
+                  </label>
+                  <label class="hotel-filters-range-label">
+                    <span class="hotel-filters-range-text">до</span>
+                    <input class="hotel-filters-input-ammount" type="number" name="max-range" min="0" placeholder="9000">
+                  </label>
+                </div>
                 <label>
                   <span class="visually-hidden">Диапазон стоимости</span>
                   <input class="hotel-filters-input-range" type="range" min="0" max="20000" step="100">
