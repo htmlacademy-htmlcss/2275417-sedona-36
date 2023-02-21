@@ -65,10 +65,23 @@ body {
 .logo-link {
   margin: 0;
   padding: 0;
-  margin-right: 28px;
+  margin-right: 44px;
   margin-bottom: -6px;
   text-decoration: none;
   z-index: 2;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.logo-link:active {
+  opacity: 0.3;
 }
 
 .logo-img {
@@ -83,6 +96,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  column-gap: 32px;
 }
 
 .navigation-user {
@@ -102,15 +116,46 @@ body {
 
 .navigation-link {
   margin: 0;
-  padding: 20px 16px;
+  padding: 20px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  min-width: 68px;
+  width: inherit;
+  height: 2px;
+  background-color: #756257;
+  z-index: 1;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .navigation-user-link:not(.button) {
@@ -126,6 +171,19 @@ body {
 
 .navigation-user-link {
   text-decoration: none;
+}
+
+.navigation-user-link:not(.button):hover {
+  opacity: 0.6;
+}
+
+.navigation-user-link:not(.button):focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.navigation-user-link:not(.button):active {
+  opacity: 0.3;
 }
 
 .navigation-user-item {
@@ -157,6 +215,18 @@ body {
 }
 
 @supports not selector(:focus-visible) {
+  .logo-link:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+  .navigation-link:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+  .navigation-user-link:not(.button):focus {
+    opacity: 0.6;
+    outline: none;
+  }
   .button:focus {
     background-color: #615048;
     outline: none;
@@ -286,12 +356,12 @@ body {
 }
 
 .sedona-welcome-text {
-  margin: 50px auto 82px;
+  margin: 51px auto 82px;
 }
 
 .advantages-heading {
   margin: 0 auto 26px;
-  padding-top: 70px;
+  padding-top: 69px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -346,17 +416,31 @@ body {
 }
 
 .advantages-title {
-  margin: 0 0 30px;
+  margin: 0 0 62px;
   padding: 0 28px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+  position: relative;
 }
 
-.advantages-title {
-  margin-bottom: 62px;
+.advantages-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  top: 84px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.advantages-blue .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-description {
@@ -553,7 +637,7 @@ body {
 
 .page-footer {
   margin: 0;
-  padding: 40px 70px 30px;
+  padding: 42px 70px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -824,6 +908,21 @@ body {
   padding: 12px 20px;
   max-width: 143px;
   border: none;
+  pointer-events: none;
+}
+
+.hotel-filters-range-label:hover {
+  background-color: #e6e6e6;
+}
+
+.hotel-filters-range-label:focus-within {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.hotel-filters-range-label:active {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0 2px #000000;
 }
 
 .hotel-filters-range-label:first-of-type {
@@ -852,7 +951,8 @@ body {
   border: none;
   outline: 0;
   color: #000000;
-  background-color: #f2f2f2;
+  background-color: inherit;
+  pointer-events: auto;
 }
 
 .hotel-filters-input-ammount::-webkit-outer-spin-button, .hotel-filters-input-ammount::-webkit-inner-spin-button {
@@ -1066,7 +1166,7 @@ body {
 .hotel-card {
   padding: 20px;
   width: 340px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
