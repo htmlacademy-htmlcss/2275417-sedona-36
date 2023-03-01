@@ -10,22 +10,20 @@
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="header-navigation">
-          <div class="navigation-container">
-            <a class="logo-link" href="index.html">
-              <img class="logo-img" src="images/logo-main.svg" width="140" height="70" alt="Логотип компании.">
-            </a>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="index.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">О седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
+          <a class="logo-link" href="index.html">
+            <img class="logo-img" src="images/logo-main.svg" width="140" height="70" alt="Логотип компании.">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-search" href="#">
@@ -104,18 +102,24 @@
                 <legend class="hotel-filters-title">Стоимость, ₽:</legend>
                 <div class="hotel-filters-inputs-container">
                   <label class="hotel-filters-range-label">
-                    <span class="hotel-filters-range-text">от</span>
+                    <span class="hotel-filters-range-text range-from">от</span>
                     <input class="hotel-filters-input-ammount" type="number" name="min-range" min="0" placeholder="0">
                   </label>
                   <label class="hotel-filters-range-label">
-                    <span class="hotel-filters-range-text">до</span>
+                    <span class="hotel-filters-range-text range-till">до</span>
                     <input class="hotel-filters-input-ammount" type="number" name="max-range" min="0" placeholder="9000">
                   </label>
                 </div>
-                <label>
-                  <span class="visually-hidden">Диапазон стоимости</span>
-                  <input class="hotel-filters-input-range" type="range" min="0" max="20000" step="100">
-                </label>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0px; width: 226px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <div class="hotel-buttons-container">
                 <button class="button hotel-filters-apply-button button-blue" type="submit">Применить</button>
@@ -218,7 +222,7 @@
               </div>
             </li>
           </ul>
-          <ul class="hotel-pagination">
+          <ol class="hotel-pagination">
             <li class="hotel-pagination-item">
               <span class="hotel-pagination-link hotel-pagination-link-current">1</span>
             </li>
@@ -237,7 +241,7 @@
             <li class="hotel-pagination-item">
               <a class="hotel-pagination-link" href="#">10</a>
             </li>
-          </ul>
+          </ol>
         </section>
         <section class="subscription-inner">
           <h2 class="subscription-inner-title">Подпишитесь на рассылку</h2>
