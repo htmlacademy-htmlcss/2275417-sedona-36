@@ -60,7 +60,7 @@
           <ul class="advantages-list">
             <li class="advantages-item advantages-blue advantages-compound">
               <div class="advantages-item-inner advantages-text-block">
-                <h3 class="advantages-title">Настоящий городок</h3>
+                <h3 class="advantages-title"><span class="text-displaced">Настоящий</span> городок</h3>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages-img" src="images/main/photo-1.jpg" width="800" height="385" alt="Улицы Седоны.">
@@ -167,7 +167,7 @@
       </footer>
     </div>
     <div class="modal-container">
-      <!-- change to display: flex to show modal window-->
+      <!-- add class modal-active to show modal window -->
       <div class="modal modal-hotel">
         <section class="modal-content">
           <div class="modal-title-container">
@@ -185,13 +185,6 @@
             <div class="modal-date-container date-start-container">
               <input class="modal-input-date" type="text" id="trip-start" name="check-in date" required placeholder="Укажите дату">
               <p class="modal-message-text">Мы не можем отправить вас в прошлое</p>
-              <button class="input-date-button" type="button">
-                <svg class="button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 20 20">
-                  <g><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
-                  <path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/>
-                  <path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g>
-                </svg>
-              </button>
             </div>
             <label class="modal-label" for="trip-end">
               <span class="modal-label-text">Дата выезда:</span>
@@ -199,13 +192,6 @@
             <div class="modal-date-container date-end-container">
               <input class="modal-input-date" type="text" id="trip-end" name="check-out date" required placeholder="Укажите дату">
               <p class="modal-message-text">На эти даты есть свободные номера. Пока есть.</p>
-              <button class="input-date-button" type="button">
-                <svg class="button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 20 20">
-                  <g><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
-                  <path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/>
-                  <path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g>
-                </svg>
-              </button>
             </div>
             <label class="modal-label label-adult" for="input-number-adult">
               <span class="modal-label-text">Взрослые:</span>
