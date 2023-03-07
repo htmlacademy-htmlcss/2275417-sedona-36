@@ -433,10 +433,14 @@ body {
 .advantages-text-block {
   width: 400px;
   min-height: 385px;
-  padding: 20px 84px;
+  padding: 103px 85px 101px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.advantages-text-block:not(.advantages-item-inner) {
+  padding: 113px 85px 112px;
 }
 
 .advantages-item:not(.advantages-dark):not(.advantages-blue) {
@@ -540,10 +544,10 @@ body {
   position: relative;
   width: 400px;
   min-height: 385px;
-  padding: 20px 84px;
+  padding: 81px 84px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -1259,12 +1263,13 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   column-gap: 70px;
-  row-gap: 10px;
 }
 
 .hotel-selection-text {
+  max-width: 360px;
   margin: 0;
   margin-right: auto;
   padding-top: 6px;
@@ -1320,7 +1325,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 8px;
   list-style-type: none;
@@ -1909,20 +1913,21 @@ body {
 
 .tooltip-text {
   position: absolute;
-  top: 40px;
+  top: 41px;
   left: 50%;
   z-index: 3;
   transform: translateX(-50%);
   display: none;
   width: 256px;
   margin: 0;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 23px 22px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  word-break: normal;
 }
 
 .tooltip-text::before {
