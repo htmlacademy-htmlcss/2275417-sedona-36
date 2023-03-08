@@ -1320,7 +1320,6 @@ body {
 }
 
 .sort-view {
-  transform: translateY(-1px);
   max-width: 160px;
   margin: 0;
   padding: 0;
